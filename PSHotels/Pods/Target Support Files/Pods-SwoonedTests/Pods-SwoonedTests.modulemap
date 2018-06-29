@@ -1,0 +1,6 @@
+framework module Pods_SwoonedTests {
+  umbrella header "Pods-SwoonedTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

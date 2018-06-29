@@ -1,0 +1,38 @@
+PODS:
+  - Alamofire (4.7.2)
+  - Google-Mobile-Ads-SDK (7.31.0)
+  - SDWebImage (4.4.1):
+    - SDWebImage/Core (= 4.4.1)
+  - SDWebImage/Core (4.4.1)
+  - SVProgressHUD (2.2.5)
+  - SwiftRangeSlider (2.0.0)
+  - YouTubePlayer (0.4.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - Google-Mobile-Ads-SDK
+  - SDWebImage (~> 4.1)
+  - SVProgressHUD
+  - SwiftRangeSlider
+  - YouTubePlayer
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - Google-Mobile-Ads-SDK
+    - SDWebImage
+    - SVProgressHUD
+    - SwiftRangeSlider
+    - YouTubePlayer
+
+SPEC CHECKSUMS:
+  Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
+  Google-Mobile-Ads-SDK: 6e529e748b45507a2ca904e0b5a52669ba3920c4
+  SDWebImage: 47e9b5b925cbce75946c23f0c42dd19464189af4
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  SwiftRangeSlider: f86e3b637c961120158fa1a89277c8343845cbe4
+  YouTubePlayer: 028451f6772f372d4759866db99824c676ac1473
+
+PODFILE CHECKSUM: ee533ba5b9624e52bf1cd2e6ad89000f1c0a28b0
+
+COCOAPODS: 1.5.2

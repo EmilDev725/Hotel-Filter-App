@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "SearchFilterView.setupPriceRange(lowerPrice:upperPrice:isValueChange:):SearchFilterView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "priceRangeSlider">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "PSUIView.setup():PSUIView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "view">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "SearchFilterView.initUIViewAndActions():SearchFilterView.swift">
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

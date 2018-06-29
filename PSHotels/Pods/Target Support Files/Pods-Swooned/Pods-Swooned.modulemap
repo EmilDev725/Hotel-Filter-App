@@ -1,0 +1,6 @@
+framework module Pods_Swooned {
+  umbrella header "Pods-Swooned-umbrella.h"
+
+  export *
+  module * { export * }
+}
