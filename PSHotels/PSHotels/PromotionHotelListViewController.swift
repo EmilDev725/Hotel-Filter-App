@@ -26,6 +26,8 @@ class PromotionHotelListViewController: PSUIViewController {
     // MARK: Override Functions
     override func viewDidLoad() {
         super.viewDidLoad()
+     
+        appDelegate.selectedMenuIndex = 5
         
         bannerHeight.constant = 0.0
         

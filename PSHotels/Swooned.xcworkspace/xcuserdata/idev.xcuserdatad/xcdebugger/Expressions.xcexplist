@@ -3,10 +3,13 @@
    version = "1.0">
    <ContextStates>
       <ContextState
-         contextName = "SearchFilterView.setupPriceRange(lowerPrice:upperPrice:isValueChange:):SearchFilterView.swift">
+         contextName = "MenuListController.viewWillAppear(_:):MenuListController.swift">
          <PersistentStrings>
             <PersistentString
-               value = "priceRangeSlider">
+               value = "appDelegate.selectedMenuIndex">
+            </PersistentString>
+            <PersistentString
+               value = "currentIndexPath.row">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -20,6 +23,14 @@
       </ContextState>
       <ContextState
          contextName = "SearchFilterView.initUIViewAndActions():SearchFilterView.swift">
+      </ContextState>
+      <ContextState
+         contextName = "SearchFilterView.setupPriceRange(lowerPrice:upperPrice:isValueChange:):SearchFilterView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "priceRangeSlider">
+            </PersistentString>
+         </PersistentStrings>
       </ContextState>
    </ContextStates>
 </VariablesViewState>

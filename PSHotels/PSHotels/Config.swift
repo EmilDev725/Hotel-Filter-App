@@ -165,6 +165,7 @@ struct language {
     
     // Nav Title
     static var psTitle                 = "Swooned"
+    static var weddingBlogTitle        = "Wedding Blog"
     static var promotionTitle          = "Supplier Offers"
     static var searchResultTitle       = "Search Result"
     static var profileTitle            = "User Profile"
@@ -190,6 +191,7 @@ struct language {
     
     // Menu
     static var menu__home                   = "Find Suppliers"
+    static var menu__weddingblog            = "Wedding Blog"
     static var menu__categories             = "Subscribe Categories"
     static var menu__hotelsRelated          = "Hotels Related"
     static var menu__recommendedHotel       = "Recommended Suppliers"

@@ -23,6 +23,8 @@ class NotiSettingViewController: PSUIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        appDelegate.selectedMenuIndex = 14
+        
         // For Menu On/Off with Swipe
         super.initSWReveal(menuButton: menuButton)
         

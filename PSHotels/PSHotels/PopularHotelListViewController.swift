@@ -27,6 +27,8 @@ class PopularHotelListViewController: PSUIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        appDelegate.selectedMenuIndex = 4
+        
         bannerHeight.constant = 0.0
         
         // For Menu On/Off with Swipe

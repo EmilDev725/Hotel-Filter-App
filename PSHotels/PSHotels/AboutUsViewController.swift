@@ -23,6 +23,8 @@ class AboutUsViewController: PSUIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        appDelegate.selectedMenuIndex =  12
+        
         // For Menu On/Off with Swipe
         super.initSWReveal(menuButton: menuButton)
         

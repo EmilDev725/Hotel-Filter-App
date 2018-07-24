@@ -30,9 +30,20 @@ class SearchViewController: PSUIViewController {
         super.controllerTitle = language.psTitle
          searchViewContainer.parentView = self
         searchViewContainer.setup()
-       
-    }
         
+        appDelegate.selectedMenuIndex = 0
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(openSupplierOffers), name: NSNotification.Name(rawValue: "PushToSupplierOffers"), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(openWeddingBlog), name: NSNotification.Name(rawValue: "pushToWeddingBlog"), object: nil)
+    }
+    
+    @objc func openSupplierOffers() {
+        self.performSegue(withIdentifier: "pushToSupplierOffers", sender: self)
+    }
+    
+    @objc func openWeddingBlog() {
+        self.performSegue(withIdentifier: "pushToWeddingBlog", sender: self)
+    }
 }
 
 

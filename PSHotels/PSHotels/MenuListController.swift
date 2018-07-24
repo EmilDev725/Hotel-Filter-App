@@ -18,6 +18,7 @@ class MenuListController: UITableViewController {
     @IBOutlet weak var profileCell: UITableViewCell!
     @IBOutlet weak var subscribeCategoryCell: UITableViewCell!
     @IBOutlet weak var homeLabel: UILabel!
+    @IBOutlet weak var weddingblogLabel: UILabel!    
     @IBOutlet weak var newsRelatedLabel: UILabel!
     @IBOutlet weak var recommendedLabel: UILabel!
     @IBOutlet weak var popularLabel: UILabel!
@@ -42,16 +43,17 @@ class MenuListController: UITableViewController {
     }
     
     let homeIndex : Int = 0
-    let recommendedHotelsIndex : Int = 2
-    let popularHotelsIndex : Int = 3
-    let promotionHotelsIndex : Int = 4
-    let profileIndex : Int = 6
-    let loginIndex : Int = 7
-    let myFavIndex : Int = 8
-    let logoutIndex : Int = 9
-    let aboutAppIndex : Int = 11
-    let contactUsIndex : Int = 12
-    let settingIndex : Int = 13
+    let weddingBlogIndex : Int = 1
+    let recommendedHotelsIndex : Int = 3
+    let popularHotelsIndex : Int = 4
+    let promotionHotelsIndex : Int = 5
+    let profileIndex : Int = 7
+    let loginIndex : Int = 8
+    let myFavIndex : Int = 9
+    let logoutIndex : Int = 10
+    let aboutAppIndex : Int = 12
+    let contactUsIndex : Int = 13
+    let settingIndex : Int = 14
     
     
     var currentIndexPath : IndexPath?
@@ -63,15 +65,30 @@ class MenuListController: UITableViewController {
             self.userLoggedIn = true
         }
         
-        currentIndexPath = IndexPath(row: homeIndex, section: 0)
+        currentIndexPath = IndexPath(row: appDelegate.selectedMenuIndex, section: 0)
         selectCell(currentIndexPath!)
         
+        addNotificatons()
+    }
+    
+    @objc func addNotificatons() {
+        NotificationCenter.default.addObserver(self, selector: #selector(openWeddingBlog), name: NSNotification.Name(rawValue: "OpenWeddingBlog"), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(openSupplierOffers), name: NSNotification.Name(rawValue: "OpenSupplierOffers"), object: nil)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        deselectCurrentCell()
+        currentIndexPath = IndexPath(row: appDelegate.selectedMenuIndex, section: 0)
+        selectCell(currentIndexPath!)
     }
     
     override func viewDidAppear(_ animated: Bool) {
         
         
         homeLabel.text = language.menu__home
+        weddingblogLabel.text = language.menu__weddingblog
         newsRelatedLabel.text = language.menu__hotelsRelated
         recommendedLabel.text = language.menu__recommendedHotel
         popularLabel.text = language.menu__popularHotels
@@ -196,8 +213,29 @@ class MenuListController: UITableViewController {
             // Delete the profile image from local
             let imagePath = Common.instance.fileInDocumentsDirectory("profile_.png")
             Common.instance.deleteImageFromPath(imagePath)
+            
+        } else if (indexPath.row == weddingBlogIndex) {
+
         }
         
+    }
+    
+    @objc func openSupplierOffers() {
+        deselectCurrentCell()
+        
+        currentIndexPath = IndexPath(row: promotionHotelsIndex, section: 0)
+        selectCell(currentIndexPath!)
+        
+        performSegue(withIdentifier: "Promotion", sender: promotionHotelsIndex)
+    }
+    
+    @objc func openWeddingBlog() {
+        deselectCurrentCell()
+        
+        currentIndexPath = IndexPath(row: weddingBlogIndex, section: 0)
+        selectCell(currentIndexPath!)
+        
+        performSegue(withIdentifier: "WeddingBlog", sender: weddingBlogIndex)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

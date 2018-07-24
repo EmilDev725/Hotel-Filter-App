@@ -22,6 +22,8 @@ class ContactUsViewController: PSUIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        appDelegate.selectedMenuIndex = 13
+        
         // For Menu On/Off with Swipe
         super.initSWReveal(menuButton: menuButton)
         

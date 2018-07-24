@@ -10,11 +10,14 @@ import Alamofire
 import UserNotifications
 import GoogleMobileAds
 
+let appDelegate = UIApplication.shared.delegate as! AppDelegate
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate  {
     
     var window: UIWindow?
     let notificationViewModel = NotificationViewModel()
+    var selectedMenuIndex : Int = 0
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.

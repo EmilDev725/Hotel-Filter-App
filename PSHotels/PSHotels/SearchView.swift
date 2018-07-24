@@ -202,6 +202,15 @@ class SearchView: PSUIView {
         lastSearchLabel.isHidden = false
     }
     
+    @IBAction func WeddingBlogClicked(_ sender: Any) {
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "pushToWeddingBlog"), object: nil)
+    }
+    
+    @IBAction func SpecialOffersClicked(_ sender: Any) {
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "PushToSupplierOffers"), object: nil)
+//        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "OpenSupplierOffers"), object: nil)
+    }
+    
 }
 
 

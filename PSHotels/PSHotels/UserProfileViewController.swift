@@ -24,6 +24,8 @@ class UserProfileViewController: PSUIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        appDelegate.selectedMenuIndex = 7
+            
         super.controllerTitle = language.profileTitle
         
         // For Menu On/Off with Swipe

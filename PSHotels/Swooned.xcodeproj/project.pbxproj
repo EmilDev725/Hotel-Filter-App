@@ -236,6 +236,7 @@
 		F231121920E5D76A004318C1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F231121320E5D76A004318C1 /* Constants.swift */; };
 		F231121A20E5D76A004318C1 /* HTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = F231121420E5D76A004318C1 /* HTag.swift */; };
 		F231121B20E5D76A004318C1 /* HTagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F231121520E5D76A004318C1 /* HTagView.swift */; };
+		F2B885BC210770D90099B485 /* WeddingBlogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B885BB210770D90099B485 /* WeddingBlogViewController.swift */; };
 		F7B302E42FB0CE91556B9CAB /* Pods_Swooned.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9367670578CCD94A8325AA9F /* Pods_Swooned.framework */; };
 /* End PBXBuildFile section */
 
@@ -510,6 +511,7 @@
 		F231121320E5D76A004318C1 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		F231121420E5D76A004318C1 /* HTag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTag.swift; sourceTree = "<group>"; };
 		F231121520E5D76A004318C1 /* HTagView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTagView.swift; sourceTree = "<group>"; };
+		F2B885BB210770D90099B485 /* WeddingBlogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeddingBlogViewController.swift; sourceTree = "<group>"; };
 		F38E25D9915B81D13B852B09 /* Pods-PSHotels.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PSHotels.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PSHotels/Pods-PSHotels.debug.xcconfig"; sourceTree = "<group>"; };
 		F7DB915CC9FDE1F3FDDD87C8 /* Pods_PSHotels.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PSHotels.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -1252,6 +1254,7 @@
 				8E54EAD9205534330002A586 /* RoomDetailViewController.swift */,
 				8E524712205A3851002ECE23 /* InquiryViewController.swift */,
 				8E52E3AC2062733100E73F8C /* RoomReviewListViewController.swift */,
+				F2B885BB210770D90099B485 /* WeddingBlogViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -1761,6 +1764,7 @@
 				8E4919C12052968F00B96154 /* ReviewRoomFilterView.swift in Sources */,
 				8E52E3AD2062733100E73F8C /* RoomReviewListViewController.swift in Sources */,
 				8E4D2BDB1F9F4252000BF755 /* ProfileView.swift in Sources */,
+				F2B885BC210770D90099B485 /* WeddingBlogViewController.swift in Sources */,
 				8E54EACE2053F5FD0002A586 /* HotelFilterView.swift in Sources */,
 				8E4E14712046761B0069058B /* PromotionHotel.swift in Sources */,
 				C16FB9751C7643ED00E12B08 /* GalleryDetailImageController.swift in Sources */,
@@ -1986,7 +1990,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/PSHotels/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.davidmolamphy.ios.swooned;
@@ -2015,7 +2019,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/PSHotels/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.davidmolamphy.ios.swooned;

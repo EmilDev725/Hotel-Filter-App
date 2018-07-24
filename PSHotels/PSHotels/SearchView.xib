@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -177,6 +178,41 @@
                                     <color key="textColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VOU-dw-D0e">
+                                    <rect key="frame" x="16" y="334" width="343" height="118"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EcG-co-Nyp">
+                                            <rect key="frame" x="0.0" y="0.0" width="164" height="118"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="EcG-co-Nyp" secondAttribute="height" multiplier="329:237" id="uUE-lK-lYr"/>
+                                            </constraints>
+                                            <state key="normal" backgroundImage="WeddingBlog"/>
+                                            <connections>
+                                                <action selector="WeddingBlogClicked:" destination="-1" eventType="touchUpInside" id="sDX-MV-gqg"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y5h-nE-CS5">
+                                            <rect key="frame" x="178.5" y="0.0" width="164" height="118"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="y5h-nE-CS5" secondAttribute="height" multiplier="329:237" id="N4b-OL-et9"/>
+                                            </constraints>
+                                            <state key="normal" backgroundImage="SpecialOffers"/>
+                                            <connections>
+                                                <action selector="SpecialOffersClicked:" destination="-1" eventType="touchUpInside" id="hmg-PQ-nj7"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="y5h-nE-CS5" secondAttribute="trailing" id="TFL-KN-m7M"/>
+                                        <constraint firstAttribute="bottom" secondItem="EcG-co-Nyp" secondAttribute="bottom" id="UQv-KE-Has"/>
+                                        <constraint firstItem="EcG-co-Nyp" firstAttribute="top" secondItem="VOU-dw-D0e" secondAttribute="top" id="c3R-M2-C4c"/>
+                                        <constraint firstItem="EcG-co-Nyp" firstAttribute="leading" secondItem="VOU-dw-D0e" secondAttribute="leading" id="c4S-LF-4sV"/>
+                                        <constraint firstItem="y5h-nE-CS5" firstAttribute="top" secondItem="VOU-dw-D0e" secondAttribute="top" id="fcv-he-lvX"/>
+                                        <constraint firstAttribute="bottom" secondItem="y5h-nE-CS5" secondAttribute="bottom" id="xM1-g8-GvE"/>
+                                        <constraint firstAttribute="width" secondItem="VOU-dw-D0e" secondAttribute="height" multiplier="688:237" id="yto-TD-Qw1"/>
+                                    </constraints>
+                                </view>
                             </subviews>
                             <constraints>
                                 <constraint firstAttribute="trailing" secondItem="qWp-EU-nNQ" secondAttribute="trailing" constant="16" id="0nb-yo-6gS"/>
@@ -194,6 +230,8 @@
                                 <constraint firstAttribute="bottom" secondItem="on9-Rt-xNa" secondAttribute="bottom" id="J4k-In-UMY"/>
                                 <constraint firstItem="on9-Rt-xNa" firstAttribute="top" secondItem="YGW-RS-vbU" secondAttribute="top" id="NtD-Is-PZG"/>
                                 <constraint firstAttribute="trailing" secondItem="i8R-UC-RZ6" secondAttribute="trailing" constant="16" id="OLz-Uy-fWS"/>
+                                <constraint firstItem="VOU-dw-D0e" firstAttribute="centerX" secondItem="YGW-RS-vbU" secondAttribute="centerX" id="PZG-0r-OXl"/>
+                                <constraint firstItem="VOU-dw-D0e" firstAttribute="width" secondItem="qWp-EU-nNQ" secondAttribute="width" id="RlY-Sv-QNq"/>
                                 <constraint firstItem="qWp-EU-nNQ" firstAttribute="leading" secondItem="YGW-RS-vbU" secondAttribute="leading" constant="16" id="Sfc-wk-xRu"/>
                                 <constraint firstAttribute="bottom" secondItem="Okj-Ji-7Lc" secondAttribute="bottom" constant="16" id="TB7-6L-9zG"/>
                                 <constraint firstItem="yWX-z6-mqO" firstAttribute="leading" secondItem="YGW-RS-vbU" secondAttribute="leading" constant="16" id="TH0-eV-qhf"/>
@@ -202,6 +240,7 @@
                                 <constraint firstItem="8a5-DG-oFE" firstAttribute="top" secondItem="YGW-RS-vbU" secondAttribute="top" constant="50" id="Xa0-le-eRL"/>
                                 <constraint firstAttribute="trailing" secondItem="8a5-DG-oFE" secondAttribute="trailing" constant="16" id="Xv3-Zd-uRu"/>
                                 <constraint firstAttribute="trailing" secondItem="yWX-z6-mqO" secondAttribute="trailing" constant="16" id="ZPX-GA-dlD"/>
+                                <constraint firstItem="VOU-dw-D0e" firstAttribute="top" secondItem="qWp-EU-nNQ" secondAttribute="bottom" constant="16" id="ebL-Tr-Fbv"/>
                                 <constraint firstItem="kAa-bq-PUz" firstAttribute="top" secondItem="Fjr-gt-Rfx" secondAttribute="bottom" constant="16" id="fED-I5-tzk"/>
                                 <constraint firstAttribute="trailing" secondItem="Okj-Ji-7Lc" secondAttribute="trailing" constant="16" id="uSB-6y-T5T"/>
                                 <constraint firstItem="i8R-UC-RZ6" firstAttribute="top" secondItem="yWX-z6-mqO" secondAttribute="bottom" constant="16" id="uhg-Sh-zzR"/>
@@ -241,5 +280,7 @@
         <image name="AppHomeBG.jpg" width="1080" height="1920"/>
         <image name="LocationPin-Icon" width="13" height="16"/>
         <image name="Profile-Icon" width="19" height="22"/>
+        <image name="SpecialOffers" width="164" height="117"/>
+        <image name="WeddingBlog" width="164" height="118"/>
     </resources>
 </document>
